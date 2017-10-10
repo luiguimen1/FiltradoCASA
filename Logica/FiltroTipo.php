@@ -1,6 +1,12 @@
 <?php
-
+/**
+ * Pagina que permite obtener una cadena de 
+ * JSON, para llevar los campos de 
+ * SelectCiudad y SelectTipo
+ * sinq ue se repitan criterios. 
+ */
 $file = fopen("./../data-1.json", "r");
+
 $contenido = fread($file, filesize("../data-1.json"));
 $contenido = json_decode($contenido);
 $listaCasa = array();

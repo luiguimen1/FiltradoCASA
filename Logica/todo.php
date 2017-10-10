@@ -1,5 +1,5 @@
 <?php
-
+if($_POST){
 /* 
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -10,3 +10,6 @@ $contenido = fread($file, filesize("../data-1.json"));
 $contenido = json_decode($contenido);
 echo json_encode($contenido);
 fclose($file);
+}else{
+    header("location:../");
+}
