@@ -62,7 +62,7 @@ $(document).ready(function () {
     $("#submitButton").click(function () {
         $("#Resultado").html("Procensado...." + loading);
         setTimeout(function () {
-            var request = "logica/Filtro.php";
+            var request = "Logica/Filtro.php";
             var cadena = $("#formulario").serialize();
             var metodoCal = function (datos) {
                 llenar(datos);
@@ -76,7 +76,7 @@ $(document).ready(function () {
     $("#todos").click(function () {
         $("#Resultado").html("Procensado...." + loading);
         setTimeout(function () {
-            var request = "logica/todo.php";
+            var request = "Logica/todo.php";
             var cadena = "acceso=true";
             var metodoCal = function (datos) {
                 llenar(datos);
